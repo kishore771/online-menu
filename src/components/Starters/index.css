@@ -1,0 +1,12 @@
+.card{
+    width: 310px;
+    cursor: pointer;
+
+}
+
+.card-img-top{
+    border-radius: 20px;
+    padding: 10px;
+    height: 5vh;
+    width: 20vw;
+}

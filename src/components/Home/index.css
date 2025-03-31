@@ -1,0 +1,60 @@
+@import '@fontsource/solway/index.css';
+@import '@fontsource/hammersmith-one/index.css';
+@import url('https://fonts.cdnfonts.com/css/hk-grotesk');
+
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+
+.homepage-container {
+    background-image: url("https://i.postimg.cc/SNFGCbwf/webimg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    display: flex; 
+    flex-direction: column;/* Ensures proper stretching */
+    align-items: center;
+    color: white;
+}
+
+.main-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 120px;
+}
+
+.tagline{
+    font-family: 'Solway', serif;
+    font-weight: 600;
+    font-size: 28px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.title{
+    font-family: 'Hammersmith one', serif;
+    font-weight: 600;
+    font-size: 80px;
+    text-align: center;
+}
+
+.dining-button{
+    background-color: white;
+    color: black;
+    font-family: 'HK Grotesk', sans-serif;
+    font-size: 15px;
+    padding: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-width: 0;
+    cursor: pointer;
+}
