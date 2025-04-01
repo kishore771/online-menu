@@ -1,0 +1,54 @@
+.offers-coupons-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.offer-title{
+    color: brown;
+    font-family: 'Solway';
+    font-size: 35px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.offers-card-title{
+    color: brown;
+    font-family: 'Solway';
+    font-size: 35px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.offers-card-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.offers-cards{
+    display: flex;
+    flex-direction: row;
+    border-radius: 15px;
+    padding: 10px;
+
+}
+
+.card-body{
+    padding: 10px;
+}
+
+.card-image{
+    width: 80px;
+    height: 70px;
+    border-radius: 5px;
+}
+
+.card-title{
+    font-size: 30px;
+}
+
+.btn{
+    color: white;
+    padding: 8px;
+    width: 50%;
+}
