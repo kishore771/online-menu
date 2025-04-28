@@ -5,7 +5,8 @@
 
 .custom-navbar {
   background-color: rgb(30, 41, 87) !important;  /* Strong navy blue */
-  padding: 10px 20px;
+  padding: 10px 10px;
+  padding-bottom: 0px;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -26,6 +27,7 @@
 
 .nav-title{
   color: beige;
+  text-decoration: none;
 }
 /* Fix Dropdown Styling */
 .dropdown-menu {

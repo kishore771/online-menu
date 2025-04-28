@@ -12,12 +12,13 @@ const Navbar = () => {
       <div className="container-fluid">
         <Link to="/" className="navbar-brand">
           <img
-            src="https://i.postimg.cc/t4YSNqc8/DALL-E-2025-03-25-21-04-04-A-modern-and-stylish-logo-for-an-online-restaurant-menu-website-The-de.webp"
+            src="https://i.postimg.cc/B6mYWG7X/freepik-a-vibrant-circular-icon-for-an-online-menu-showcas-48186-removebg-preview.png"
             alt="menu logo"
             className="nav-logo"
           />
         </Link>
-        <h4 className="nav-title">Delicia! - A Taste of Pure Joy</h4>
+        <Link to='/' className="nav-title">
+        <h4 >Delicia! - A Taste of Pure Joy</h4></Link>
         {/* ✅ Mobile Toggle Button */}
         <button
           className="navbar-toggler"

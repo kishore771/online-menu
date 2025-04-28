@@ -30,6 +30,8 @@ body, html {
     justify-content: center;
     align-items: center;
     margin-top: 120px;
+    animation: forwards;
+    transition: 1ms;
 }
 
 .tagline{

@@ -2,23 +2,23 @@ import { useEffect, useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import './index.css';
 
-const Snacks = () => {
-  const [snacks, setSnacks] = useState([]); // Ensure it's initialized as an array
-  const API_URL = "https://67ea5a8a34bcedd95f632389.mockapi.io/snacks"; // Correct API URL
+const Snacks = ({ addToCart }) => {
+  const [snacks, setSnacks] = useState([]);
+  const API_URL = "https://67ea5a8a34bcedd95f632389.mockapi.io/snacks";
 
   useEffect(() => {
     fetch(API_URL)
       .then((response) => response.json())
       .then((data) => {
         if (Array.isArray(data)) {
-          setSnacks(data); // Ensure `data` is an array
+          setSnacks(data);
         } else {
-          setSnacks([]); // Set empty array if response is not correct
+          setSnacks([]);
         }
       })
       .catch((error) => {
-        console.error("Error fetching starters:", error);
-        setSnacks([]); // Handle errors by setting an empty array
+        console.error("Error fetching snacks:", error);
+        setSnacks([]);
       });
   }, []);
 
@@ -40,13 +40,18 @@ const Snacks = () => {
                   <h5 className="card-title">{snack.name}</h5>
                   <p className="card-text">{snack.description}</p>
                   <h6 className="text-primary">${snack.price.toFixed(2)}</h6>
-                  <button className="btn btn-warning w-100">Order Now</button>
+                  <button
+                    className="btn btn-warning w-100"
+                    onClick={() => addToCart(snack)}
+                  >
+                    Order Now
+                  </button>
                 </div>
               </div>
             </div>
           ))
         ) : (
-          <p className="text-center">No starters available.</p>
+          <p className="text-center">No snacks available.</p>
         )}
       </div>
     </div>
@@ -54,3 +59,4 @@ const Snacks = () => {
 };
 
 export default Snacks;
+

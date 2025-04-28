@@ -8,7 +8,9 @@ import Beverages from "./components/Beverages";
 import Snacks from "./components/Snacks";
 import Deserts from "./components/Deserts";
 import Dips from "./components/Dips";
-import OffersandCoupons from "./components/OffersandCoupons";
+import OffersandCoupons from "./components/OffersandCoupons";   
+import Cart from "./components/Cart";
+import Profile from './components/Profile';
 function App() {
   return (
     <Router>  {/* ✅ Wrap everything inside BrowserRouter */}
@@ -20,10 +22,12 @@ function App() {
           <Route path="/menu/starters" element={<Starters />} />
           <Route path="/menu/main-course" element={<Maincourse />} />
           <Route path="/menu/desserts" element={<Deserts />} />
-          <Route path="/menu/snacks" element={<Snacks />} />
+          <Route path="/menu/snacks" addtocart={addToCart} element={<Snacks />} />
           <Route path="/menu/beverages" element={<Beverages />} />
           <Route path="/menu/dips" element={<Dips />} />
           <Route path="/offersandcoupons" element={<OffersandCoupons/>}/>
+          <Route path="/cart" element={<Cart/>}/>
+          <Route path="/profile" element={<Profile/>}/>
         </Routes>
       </div>
     </Router>
